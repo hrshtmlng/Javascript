@@ -1,0 +1,8 @@
+const str = "JavaScript is awesome"
+
+function reverseAString(str) {
+    let t = str.split("").reverse().join("");
+    return t;
+}
+
+console.log(`Reversed string is: ${reverseAString(str)}`)
