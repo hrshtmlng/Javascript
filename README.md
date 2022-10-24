@@ -1,2 +1,2 @@
 # Javascript
-JAVASCRIPT projects
+50 Days of Javascript
