@@ -1,0 +1,22 @@
+/**
+ *
+ * @param {number[]} inputArray Array of numbers
+ */
+const longestConsecutiveSequence = (inputArray) => {
+	// Your code here
+    const S = new Set(inputArray);
+
+
+    let max = 1;
+
+    for (let e of inputArray) {
+        if (!S.has(e - 1)) {
+            let len = 1;
+            while (S.has(e + len)) {
+                len++;
+            }
+            max = Math.max(max, len);
+        }
+    }
+	return max;
+}
