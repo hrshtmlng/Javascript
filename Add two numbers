@@ -1,0 +1,5 @@
+const addTwoNumbers = (a, b) => {
+	// code here
+    c = a + b;
+	return c;
+}
