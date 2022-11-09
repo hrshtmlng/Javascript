@@ -1,0 +1,12 @@
+const unionOfArrays = (arr1, arr2) => {
+  // code below here
+    dup_arr =  [...arr1]
+    arr2.forEach((val) => {
+        if (dup_arr.includes(val) === false ) {
+            dup_arr.push(val)
+        }
+    })
+  return dup_arr;
+};
+
+console.log(`The union is ${unionOfArrays([1, 2, 34, 45, 3], [3, 24, 21])}`);
