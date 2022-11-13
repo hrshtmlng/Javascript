@@ -1,0 +1,15 @@
+function spinWords(str) {
+  //TODO Have fun :)
+  let string = str;
+  let final = [];
+  let strList = str.split(' ');
+  for(var i = 0; i<strList.length; i++) {
+      if(strList[i].length>4 ){
+          final.push(strList[i].split('').reverse().join(''));
+
+      } else {
+          final.push(strList[i]);
+      }
+  }
+  return final.join(' ');
+}
