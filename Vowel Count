@@ -1,0 +1,14 @@
+function getCount(str) {
+  let vowelsCount = 0;
+  // enter your magic here
+  str = str.toLowerCase();
+  for (char of str) {
+      if (["a", "e", "i", "o", "u"].includes(char)) {
+          vowelsCount += 1;
+      }
+  }
+
+  return vowelsCount;
+}
+
+console.log(getCount("abracadabra"));
