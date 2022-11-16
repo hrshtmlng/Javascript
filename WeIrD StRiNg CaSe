@@ -1,0 +1,8 @@
+function toWeirdCase(string) {
+  // Your code goes here
+  return [...string].map((e,i)=> i%2?e.toLowerCase():e. toUpperCase()).join('')
+}
+
+console.log(
+  `The weird case of ${"A test case"} is ${toWeirdCase("A test case")}`
+);
