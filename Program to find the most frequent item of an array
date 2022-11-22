@@ -1,0 +1,26 @@
+function mostFreq(arr) {
+	// write your code here
+    let mf = 1;
+    let m = 0;
+    let item;
+    for (let i=0; i<arr.length; i++)
+    {
+        for (let j=i; j<arr.length; j++)
+        {
+            if (arr[i] == arr[j])
+            m++;
+            if (mf<m)
+            {
+                mf=m;
+                item = arr[i];
+            }
+        }
+        m=0;
+    }
+    
+	return `${item} ${mf}`
+}
+
+const arr = [1, 2, 2, 4, 5, 6, 6];
+
+console.log(mostFreq(arr));
