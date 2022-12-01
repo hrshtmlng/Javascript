@@ -1,0 +1,13 @@
+function high(x) {
+  //code your magic here
+  const str = x.split(' ');
+  const result1 = [];
+  const result = str.reduce((_,dig) => {
+    let c = 0;
+    for(let j = 0; j < dig.length; j++) {
+        c = c + (dig.charCodeAt(j)- 96);
+    }
+    result1.push(c);
+  }, 0);
+  return str[result1.indexOf(result1.slice().sort((a, b)=> b - a)[0])];
+}
